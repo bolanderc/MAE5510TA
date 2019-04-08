@@ -39,6 +39,7 @@ def HW5_24(K_ell=0.992, K_gamma=0.797, eps_sbv=-0.035):
     gamma_f = -3.5*np.pi/180.
     delCell_bf = -2.*K_ell*K_gamma*CLwa*gamma_f/(3.*np.pi)
     print("delCell_bf (0.2 pt):",delCell_bf)
+    print("combined:", delCell_bgamw + delCell_bf)
     CLw = 0.5230
     delCell_blam = -2.*K_ell*CLw*np.tan(lamda_w)/(3.*np.pi)
     print("delCell_blam (0.2 pt):",delCell_blam)
@@ -208,6 +209,7 @@ def HW7_5():
 print("5.24 (2.0 pts)")
 print("-------------------------")
 HW5_24()
+#HW5_24(K_ell=0.97, K_gamma=0.79, eps_sbv=-0.0337)
 print("\n5.26 (2.0 pts)")
 print("-------------------------")
 HW5_26()
@@ -224,3 +226,10 @@ print("\n7.5 (1.0 pt)")
 print("-------------------------")
 HW7_5()
 
+#5.24 (/2) :
+#5.26 (/2) :
+#5.27 (/3) :
+#7.3 (/1) :
+#7.4 (/1) :
+#7.5 (/1) :
+#Total (/10) :
